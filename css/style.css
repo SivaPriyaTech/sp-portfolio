@@ -1,0 +1,1094 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Inter', sans-serif; 
+    font-size: 16px;                
+    line-height: 1.5;                
+    background-color: #ffffff;       
+    color: #333333;                  
+    margin: 0;
+}
+
+/* Header */
+
+.ab-pfo-nav-section{
+    background-color: #2B2B2B;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+
+.ab-pfo-nav-main-div{
+    display: flex;
+    padding: 2rem 2rem;
+}
+
+.ab-pfo-nav-list-container{
+    flex: 1
+}
+.mob.ab-pfo-nav-list-container{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: 0.7s ease-in-out;
+}
+.mob.ab-pfo-nav-list-container a{
+    font-weight: 600;
+}
+.mob.ab-pfo-nav-list-container.animate-reverse{
+    transform: translateX(100%);
+    animation: horizontal-animate-reverse 0.7s;
+}
+.mob.ab-pfo-nav-list-container.show{
+    animation: horizontal-animate 0.7s;
+    transform: translateX(0%);
+}
+@keyframes horizontal-animate{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes horizontal-animate-reverse{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.mob.ab-pfo-nav-list-container ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #f3e04f;
+    padding: 20px 20px;
+}
+.mob .ab-pfo-nav-list-item a{
+    color: #2B2B2B !important;
+}
+.mob .ab-pfo-nav-list-item .ab-pfo-nav-item.active{
+    border-bottom: 2px solid #2B2B2B !important;
+}
+
+.ab-pfo-nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 0;
+}
+
+.ab-pfo-nav-list .ab-pfo-nav-list-item .ab-pfo-nav-item{
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif; 
+    font-size: 24px;                
+    line-height: normal; 
+    text-decoration: none;
+    padding: 10px 0;
+    /* transition: 0.5s ease; */
+}
+.ab-pfo-nav-list .ab-pfo-nav-list-item .ab-pfo-nav-item.active{
+    border-bottom: 2px solid #fff;
+}
+.ab-pfo-nav-list .ab-pfo-nav-list-item .ab-pfo-nav-item:hover{
+    border-bottom: 2px solid #fff;
+    /* transition: 0.5s ease; */
+}
+
+.ab-pfo-hamburger{
+    display: none;
+    gap: 5px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.ab-pfo-hamburger span{
+    width: 49px;
+    height: 4px;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.animate.ab-pfo-hamburger span:nth-child(2){
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.animate.ab-pfo-hamburger span:nth-child(1){
+    transform: rotate(45deg) translate(6px, 6px);
+    transition: 0.3s ease-in-out;
+}
+.animate.ab-pfo-hamburger span:nth-child(3){
+    transform: rotate(-45deg) translate(7px, -6px);
+    transition: 0.3s ease-in-out;
+}
+/* Banner Section */
+
+.ab-pfo-banner-section{
+    background: url(../images/banner-background.png);
+    background-repeat: no-repeat;
+    background-position-x: 110%;
+    background-size: 50%;
+    background-position-y: 35%;
+    margin-top: 93px;
+}
+
+.ab-pfo-banner-image{
+    width: fit-content;
+    margin: 0 0 0 auto;
+}
+
+.ab-pfo-banner-container {
+    padding-top: 40px;
+}
+
+.ab-pfo-banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.ab-pfo-banner-name{
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: #000000;
+    font-size: 64px; 
+}
+
+.ab-pfo-banner-description{
+    font-family: "Kalam", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    font-size: 28px; 
+}
+
+/* Technical Section */
+.ab-pfo-tech-section{
+    padding: 40px 0;
+    background: url(../images/yellowbg.png)
+}
+
+.ab-pfo-sec-head-section{
+    position:relative;
+}
+
+.ab-pfo-sec-head-overflow{
+    background-color: #000000;
+    width: 410px;
+    height: 62px;
+    margin:0 auto;
+    animation: title-animation 2s infinite;
+}
+
+@keyframes title-animation{
+    0%{
+        transform: rotate(2.5deg);
+    }
+    50%{
+        transform: rotate(-2.5deg);
+    }
+    100%{
+        transform: rotate(2.5deg);
+    }
+}
+
+/* .ab-pfo-sec-head-section:hover .ab-pfo-sec-head-overflow{
+    transform: rotate(-2.5deg);
+    transition:0.3s ease;
+} */
+
+.ab-pfo-sec-head{
+    background-color: #F3E04F;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px 20px;
+    border: 1px solid #000000;
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, 0%);
+}
+
+.ab-pfo-sec-head p{
+    font-family: Jua;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+.ab-pfo-tech-skills-section{
+    padding: 100px 0;
+}
+
+.ab-pfo-tech-skills-section img{
+    max-width: 60%;
+}
+
+.ab-pfo-tech-skills{
+    position: relative;
+}
+
+.ab-pfo-tech-skill-holder{
+    display: flex !important;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    min-height: 312px;
+    border-radius: 100px;
+    border: 1px solid #000000;
+}
+
+.ab-pfo-tech-skills-section .slick-slide {
+    margin: 0 20px; 
+}
+
+.ab-pfo-tech-skills-section .slick-arrow{
+    border:none;
+    position: absolute;
+    bottom:-30%;
+    background: transparent;
+}
+
+.ab-pfo-tech-skills-section .slick-arrow:hover svg circle{
+    fill: #000000;
+}
+
+.ab-pfo-tech-skills-section .slick-arrow:hover svg path{
+    fill: #F3E04F;
+}
+
+.ab-pfo-tech-skills-section .slick-prev{
+    right: 51%;
+}
+
+.ab-pfo-tech-skills-section .slick-next{
+    left: 51%;
+}
+
+/* My Professional Journey */
+
+.ab-pfo-prof-jrny-section{
+    padding: 80px;
+}
+
+.ab-pfo-prof-jrny-head p{
+    font-family: Jua;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.ab-pfo-prof-jrny-content p{
+    font-family: Kalam;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+}
+
+
+
+/* Projects that define me */
+
+
+.ab-pfo-projects p{
+    font-family: Jua;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+}
+
+.ab-pfo-marquee-container {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    transform: none;
+  }
+  
+  .ab-pfo-marquee {
+    flex: 0 0 auto;
+    min-width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    animation: scroll 20s linear 0s infinite;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-direction: normal;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .ab-pfo-initial-child-container {
+    flex: 0 0 auto;
+    display: flex;
+    min-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  
+  .ab-pfo-child {
+    transform: none;
+  }
+.object-contain {
+    object-fit: contain;
+}
+
+.w-32 {
+    width: 8rem;
+}
+
+.h-24 {
+    height: 6rem;
+}
+
+.mr-16 {
+    margin-right: 4rem;
+}
+
+.ab-pfo-lazyload-wrapper{
+    margin-bottom: 30px;
+}
+
+
+/*Projects Card*/
+.ab-pfo-projects-list-div{
+    width: fit-content;
+    max-width: 68rem;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem auto 0 auto;
+    padding: 40px;
+}
+.ab-pfo-proj-list-img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ab-pfo-proj-list-img-div img{
+    max-width: 13rem;
+}
+
+
+/* Recognition and awards */
+
+.ab-pfo-awards-section{
+    margin: 60px 0 0 0;
+    background: url(../images/yellowbg.png);
+    padding: 40px 0;
+}
+
+.ab-pfo-reg-head-oveflow{
+    width:274px;
+}
+
+.ab-pfo-awards-holder{
+    border: 1px solid #000000;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.ab-pfo-award-name{
+    border-top: 2px solid #000000;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.ab-pfo-award-name p{
+    font-family: Kalam;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.26px;
+    text-align: center;
+    color: #000000;
+}
+
+.ab-pfo-certificate-holder{
+    padding:30px;
+}
+
+.ab-pfo-awards-lists-section{
+    margin: 70px 0 20px 0;
+}
+
+
+
+/*Get in touch section*/
+.ab-pfo-contact-main-div{
+    margin-top: 3rem;
+}
+.ab-pfo-contact-main-div input, .ab-pfo-contact-main-div textarea{
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 14px;
+}
+.ab-pfo-contact-main-div textarea{
+    height: 200px;
+}
+.ab-pfo-contact-submit-btn{
+    width: 100%;
+    background-color: #2B2B2B;
+    padding: 10px 10px;
+    color: white;
+    transition: 0.2s ease-in;
+    border: 1px solid #2B2B2B;
+}
+.ab-pfo-contact-submit-btn:hover{
+    background-color: #F3E04F;
+    color: #2B2B2B;
+    transition: 0.2s ease-in;
+}
+/* Chrome, Safari, Edge, Opera */
+.input-number::-webkit-outer-spin-button, .input-number::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+} 
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* Academic Backgrounds */
+
+.ab-pfo-academic-section{
+    margin: 40px 0;
+}
+
+.ab-pfo-academic-head h1{
+    font-family: Jua;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+}
+
+.ab-pfo-academic-tabs{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.ab-pfo-academic-tab{
+    min-width: 215px;
+    font-family: Kalam;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    line-height: 51px;
+    vertical-align: middle;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.ab-pfo-academic-tab:hover{
+    background-color: #F3E04F;
+    transition: 0.3s ease;
+}
+
+.ab-pfo-academic-tab.active{
+    background-color: #F3E04F;
+}
+
+.ab-pfo-academic-tab p{
+    margin-bottom: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.ab-pfo-academic-score{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.ab-pfo-academic-score p{
+    font-family: Kalam;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    color: #000000;
+}
+
+.ab-pfo-academic-tab-content{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.ab-pfo-academic-tab-content{
+    display: none;
+}
+
+
+.ab-pfo-academic-tab-content.active{
+    display: block;
+}
+input:focus-visible, textarea:focus-visible{
+    border-color: green;
+    outline: none;
+}
+.input-msg{
+    color: red;
+    margin-top: -10px;
+    display: block;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+.input-email-div{
+    position: relative;
+}
+.email-verify-btn{
+    content: "Verify";
+    position: absolute;
+    background-color: white;
+    color: #02a9ea;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Popup Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin: 15% auto;
+}
+.hidden {
+    display: none;
+}
+
+/* Footer */
+
+.ab-pfo-footer{
+    font-family: Jua;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: left;
+    color: #fff;
+    background-color: #2B2B2B;
+    padding: 10px 0;
+}
+
+.ab-pfo-footer-detail a{
+    margin-bottom: 0;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Mail send Success  */
+.confirm-msg-div{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: #bffdbe;
+    z-index: 9999;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid green;
+    display: none;
+}
+.confirm-msg{
+    margin-bottom: 0;
+    color: green;
+}
+.loader-div{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    backdrop-filter: blur(12px);
+    z-index: 999;
+    display: none;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f5df39;
+    border-top: 5px solid #2B2B2B;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: translate(-50%,-50%) rotate(0deg); }
+    100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+
+
+/* Go top  */
+.go-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f5df39;
+    border: 1px solid #2B2B2B;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.go-top:hover{
+    background-color: white;
+}
+.go-top img{
+    max-width: 1rem;
+}
+
+
+@media (max-width:1399px) {
+    .ab-pfo-nav-list .ab-pfo-nav-list-item .ab-pfo-nav-item{
+        font-size: 20px;
+    }
+    .ab-pfo-banner-name{
+        font-size: 54px;
+    }
+    .ab-pfo-banner-description{
+        font-size: 24px;
+    }
+    .ab-pfo-sec-head p{
+        font-size: 28px;
+    }
+    .ab-pfo-sec-head-overflow {
+        width: 303px;
+        height: 49px;
+    }
+    .ab-pfo-reg-head-oveflow{
+        width: 210px;
+        height: 47px;
+    }
+    .ab-pfo-tech-skills-section {
+        padding: 60px 0;
+    }
+    .ab-pfo-tech-section{
+        padding: 40px 0 70px 0;
+    }
+    .ab-pfo-prof-jrny-head p, .ab-pfo-projects p{
+        font-size: 36px;
+    }
+    .ab-pfo-prof-jrny-content p{
+        font-size: 26px;
+    }
+    .ab-pfo-prof-jrny-section{
+        padding: 80px 0 48px 0;
+    }
+    .ab-pfo-projects-list-div{
+        margin: 0 auto 0 auto;
+    }
+    .ab-pfo-banner-section{
+        margin-top: 80px;
+    }
+    .ab-pfo-proj-list-img-div img {
+        max-width: 10rem;
+    }
+    
+}
+
+@media (max-width:1199px) {
+    .ab-pfo-banner-image image{
+        max-width: 24rem;
+    }
+    .ab-pfo-banner-name {
+        font-size: 47px;
+    }
+    .ab-pfo-banner-description {
+        font-size: 21px;
+    }
+    .ab-pfo-prof-jrny-content p {
+        font-size: 23px;
+    }
+    .ab-pfo-projects-list-div{
+        gap: 3rem;
+    }
+    .ab-pfo-footer-detail a{
+        font-size: 18px;
+    }
+    .ab-pfo-footer-detail img{
+        width: 3rem;
+    }
+    .ab-pfo-footer-detail .email img{
+        width: 2rem;
+    }
+    .ab-pfo-nav-list .ab-pfo-nav-list-item .ab-pfo-nav-item {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:991px) {
+    .ab-pfo-banner-image img{
+        max-width: 18rem !important;
+    }
+    .ab-pfo-prof-jrny-section {
+        padding: 52px 0 48px 0;
+    }
+    .ab-pfo-projects-list-div{
+        padding-top: 0;
+    }
+    .ab-pfo-awards-section {
+        margin: 30px 0 0 0;
+    }
+    .ab-pfo-tech-skills-section img {
+        max-width: 44%;
+    }
+    .ab-pfo-tech-skill-holder{
+        min-height: 234px;
+        border-radius: 68px;
+    }
+}
+
+@media (max-width:767px) {
+    .ab-pfo-banner-image img{
+        max-width: 13rem !important;
+    }
+    .ab-pfo-banner-name {
+        font-size: 36px;
+    }
+    .ab-pfo-banner-description {
+        font-size: 14px;
+    }
+    .ab-pfo-banner-section {
+        background-position-x: 100%;
+        background-size: 47%;
+        background-position-y: 19%;
+    }
+    .ab-pfo-prof-jrny-head p, .ab-pfo-projects p {
+        font-size: 28px;
+    }
+    .ab-pfo-prof-jrny-content p {
+        font-size: 16px;
+    }
+    .ab-pfo-prof-jrny-section {
+        padding: 24px 0 20px 0;
+    }
+    .ab-pfo-proj-list-img-div img {
+        max-width: 7rem;
+    }
+    .ab-pfo-projects-list-div {
+        gap: 2rem;
+    }
+    .ab-pfo-contact-main-div input, .ab-pfo-contact-main-div textarea{
+        font-size: 14px;
+    }
+    .slick-arrow svg{
+        width: 38px;
+    }
+    .ab-pfo-tech-skills-section .slick-arrow{
+        bottom: -44%;
+    }
+    .ab-pfo-tech-skill-holder {
+        min-height: 198px;
+        border-radius: 54px;
+    }
+    .ab-pfo-nav-list .ab-pfo-nav-list-item .ab-pfo-nav-item {
+        font-size: 16px;
+    }
+    .ab-pfo-nav-list{
+        gap: 2rem;
+    }
+    .ab-pfo-hamburger span {
+        width: 38px;
+    }
+}
+
+@media (max-width:575px) {
+    .ab-pfo-nav-list-container{
+        display: none; /* Temoprary */
+    }
+    .mob.ab-pfo-nav-list-container{
+        display: block;
+        transform: translateX(100%);
+    }
+    .ab-pfo-hamburger{
+        display: flex;
+    }
+    .ab-pfo-hamburger span{
+        width: 38px;
+    }
+    .ab-pfo-banner-name {
+        font-size: 33px;
+    }
+    .ab-pfo-banner-image img {
+        max-width: 12rem !important;
+    }
+    .ab-pfo-banner-section {
+        background-position-x: 102%;
+        background-size: 44%;
+        background-position-y: 4%;
+    }
+    .ab-pfo-sec-head p {
+        font-size: 22px;
+    }
+    .ab-pfo-sec-head-overflow {
+        width: 250px;
+        height: 39px;
+    }
+    .ab-pfo-tech-skills-section{
+        padding: 40px 0;
+    }
+    .ab-pfo-tech-skills-section img{
+        max-width: 60%;
+    }
+    .ab-pfo-prof-jrny-head p, .ab-pfo-projects p{
+        font-size: 22px;
+    }
+    .ab-pfo-prof-jrny-content p{
+        font-size: 14px;
+        margin-top: 18px;
+        text-align: justify;
+    }
+    .ab-pfo-reg-head-oveflow{
+        width: 173px;
+    }
+    .ab-pfo-footer-detail a {
+        font-size: 14px;
+    }
+    .ab-pfo-footer-detail img {
+        width: 2rem;
+    }
+    .ab-pfo-footer-detail .email img {
+        width: 1.4rem;
+    }
+    .ab-pfo-contact-main-div input, .ab-pfo-contact-main-div textarea{
+        padding: 14px;
+    }
+    .ab-pfo-tech-skills-section .slick-slide {
+        margin: 0 5px;
+    }
+    .ab-pfo-nav-main-div{
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+    .ab-pfo-banner-section {
+        margin-top: 55px;
+    }
+    .input-msg{
+        font-size: 12px;
+    }
+    .confirm-msg{
+        font-size: 12px;
+    }
+    .confirm-msg-div{
+        padding: 7px 12px;
+    }
+    .go-top{
+        width: 40px;
+        height: 40px;
+    }
+    .ab-pfo-footer-detail{
+        gap: unset !important;
+    }
+
+}
+
+@media (max-width:425px) {
+    .ab-pfo-banner-name {
+        font-size: 26px;
+    }
+    .ab-pfo-banner-description {
+        font-size: 11px;
+    }
+    .ab-pfo-banner-image img {
+        max-width: 9rem !important;
+    }
+    .ab-pfo-banner-container {
+        padding-top: 27px;
+    }
+    .ab-pfo-sec-head p {
+        font-size: 16px;
+    }
+    .ab-pfo-sec-head-overflow {
+        width: 195px;
+        height: 32px;
+    }
+    .ab-pfo-tech-section {
+        padding: 30px 0 58px 0;
+    }
+    .ab-pfo-tech-skills-section .slick-slide {
+        margin: 0 5px;
+    }
+    .ab-pfo-tech-skill-holder{
+        border-radius: 43px;
+    }
+    .ab-pfo-tech-skills-section .slick-arrow {
+        bottom: -47%;
+    }
+    .ab-pfo-prof-jrny-head p, .ab-pfo-projects p {
+        font-size: 20px;
+    }
+    .ab-pfo-prof-jrny-content p {
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .ab-pfo-projects p{
+        margin-bottom: 0;
+    }
+    .ab-pfo-proj-list-img-div img {
+        max-width: 5rem;
+    }
+    .ab-pfo-projects-list-div {
+        gap: 1rem;
+        padding-bottom: 0;
+    }
+    .ab-pfo-reg-head-oveflow{
+        width: 140px;
+    }
+    .ab-pfo-awards-section{
+        padding-top: 30px;
+    }
+    .ab-pfo-contact-main-div {
+        margin-top: 2rem;
+    }
+    .ab-pfo-contact-main-div textarea {
+        height: 138px;
+    }
+    .ab-pfo-contact-main-div input, .ab-pfo-contact-main-div textarea {
+        font-size: 12px;
+    }
+    .ab-pfo-tech-skill-holder {
+        min-height: 147px;
+    }
+    .ab-pfo-footer-detail{
+        flex-wrap: wrap;
+        gap: 20px !important;
+    }
+    .ab-pfo-banner-section {
+        background-position-x: 100%;
+        background-size: 46%;
+        background-position-y: 5%;
+    }
+    .ab-pfo-contact-submit-btn{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:375px) {
+    .ab-pfo-footer-detail .email img {
+        width: 1rem;
+    }
+    .ab-pfo-footer-detail a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:345px) {
+    .ab-pfo-banner-name {
+        font-size: 22px;
+    }
+    .ab-pfo-banner-description {
+        font-size: 10px;
+    }
+    .ab-pfo-banner-image img {
+        max-width: 7rem !important;
+    }
+    .ab-pfo-tech-section {
+        padding: 20px 0 38px 0;
+    }
+    .ab-pfo-tech-skills-section img {
+        max-width: 49%;
+    }
+    .ab-pfo-tech-skill-holder {
+        min-height: 131px;
+        border-radius: 36px;
+    }
+    .slick-arrow svg {
+        width: 31px;
+    }
+    .ab-pfo-prof-jrny-head p, .ab-pfo-projects p {
+        font-size: 18px;
+    }
+    .ab-pfo-prof-jrny-content p {
+        font-size: 11px;
+    }
+    .ab-pfo-proj-list-img-div img {
+        max-width: 3rem;
+    }
+    .ab-pfo-contact-main-div input, .ab-pfo-contact-main-div textarea {
+        font-size: 11px;
+    }
+    .ab-pfo-contact-main-div input, .ab-pfo-contact-main-div textarea {
+        padding: 10px;
+    }
+    .ab-pfo-contact-submit-btn{
+        font-size: 12px;
+    }
+}
