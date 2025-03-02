@@ -8,7 +8,7 @@
 
 /* Body Styles */
 body {
-    font-family: 'Inter', sans-serif; 
+    font-family: "Alata", sans-serif;
     font-size: 16px;                
     line-height: 1.5;                
     background-color: #ffffff;       
@@ -137,12 +137,22 @@ body {
 /* Banner Section */
 
 .ab-pfo-banner-section{
-    background: url(../images/banner-background.png);
+    /* background: url(../images/banner-background.png); */
     background-repeat: no-repeat;
-    background-position-x: 110%;
-    background-size: 50%;
-    background-position-y: 35%;
+    /* background-position-x: 110%; */
+    /* background-size: 50%; */
+    /* background-position-y: 35%; */
     margin-top: 93px;
+    background: linear-gradient(116.17deg, #C4EAAA 13.68%, rgba(255, 255, 255, 0) 77.32%);
+}
+
+.ab-pfo-banner-welcometxt{
+    font-family: Borel;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 50px;
+    letter-spacing: 0%;
+    color:#000000 #000000;
 }
 
 .ab-pfo-banner-image{
@@ -150,9 +160,9 @@ body {
     margin: 0 0 0 auto;
 }
 
-.ab-pfo-banner-container {
+/* .ab-pfo-banner-container {
     padding-top: 40px;
-}
+} */
 
 .ab-pfo-banner-content{
     display: flex;
@@ -162,15 +172,19 @@ body {
 }
 
 .ab-pfo-banner-name{
-    font-family: "Itim", serif;
+    font-family: Borel;
     font-weight: 400;
     font-style: normal; 
     color: #000000;
     font-size: 64px; 
+    line-height: 50px;
+}
+.ab-pfo-banner-name span{
+    font-family: Boogaloo;
 }
 
 .ab-pfo-banner-description{
-    font-family: "Kalam", serif;
+    font-family: Alata;
     font-weight: 400;
     font-style: normal;
     color: #000000;
@@ -180,7 +194,8 @@ body {
 /* Technical Section */
 .ab-pfo-tech-section{
     padding: 40px 0;
-    background: url(../images/yellowbg.png)
+    /* background: url(../images/yellowbg.png) */
+    background: #A6D388;
 }
 
 .ab-pfo-sec-head-section{
@@ -213,21 +228,21 @@ body {
 } */
 
 .ab-pfo-sec-head{
-    background-color: #F3E04F;
+    background-color: #fff;
     width: fit-content;
-    margin: 0 auto;
-    padding: 5px 20px;
-    border: 1px solid #000000;
-    position: absolute;
+    /* margin: 0 auto; */
+    padding: 14px 20px;
+    /* border: 1px solid #000000; */
+    /* position: absolute;
     top: 0px;
     right: 50%;
     left: 50%;
     white-space: nowrap;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%); */
 }
 
 .ab-pfo-sec-head p{
-    font-family: Jua;
+    font-family: Bree Serif;
     font-size: 40px;
     font-weight: 400;
     line-height: normal;
@@ -290,21 +305,30 @@ body {
     padding: 80px;
 }
 
+.ab-pfo-prof-jrny-head{
+    background-color: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 14px 20px;
+    margin-right: 0;
+}
+
 .ab-pfo-prof-jrny-head p{
-    font-family: Jua;
+    font-family: 'Bree Serif';
     font-size: 48px;
     font-weight: 400;
     line-height: normal;
     text-align: center;
     color: #000000;
+    margin-bottom:0;
 }
 
 .ab-pfo-prof-jrny-content p{
-    font-family: Kalam;
+    font-family: Alata;
     font-size: 32px;
     font-weight: 400;
-    line-height: normal;
-    text-align: center;
+    line-height: 150%;
+    text-align: justify;
     color: #000000;
     margin-top: 30px;
 }
@@ -315,7 +339,7 @@ body {
 
 
 .ab-pfo-projects p{
-    font-family: Jua;
+    font-family: "Bree Serif", serif;
     font-size: 48px;
     font-weight: 400;
     line-height: 60px;
@@ -412,7 +436,8 @@ body {
 
 .ab-pfo-awards-section{
     margin: 60px 0 0 0;
-    background: url(../images/yellowbg.png);
+    /* background: url(../images/yellowbg.png); */
+    background: #2B2B2B;
     padding: 40px 0;
 }
 
@@ -457,6 +482,15 @@ body {
 
 
 /*Get in touch section*/
+
+.ab-pfo-con-head{
+    padding: 0;
+    background: transparent;
+}
+
+.ab-pfo-con-head p{
+    color:#fff;
+}
 .ab-pfo-contact-main-div{
     margin-top: 3rem;
 }
@@ -628,13 +662,13 @@ input:focus-visible, textarea:focus-visible{
 /* Footer */
 
 .ab-pfo-footer{
-    font-family: Jua;
+    font-family: Alata;
     font-size: 24px;
     font-weight: 400;
     line-height: 45px;
     text-align: left;
-    color: #fff;
-    background-color: #2B2B2B;
+    color: #000;
+    background-color: #A6D388;
     padding: 10px 0;
 }
 
@@ -644,7 +678,8 @@ input:focus-visible, textarea:focus-visible{
     font-style: italic;
     font-weight: 400;
     text-decoration: none;
-    color: #fff;
+    color: #000;
+    font-family: Alata;
 }
 
 
@@ -722,6 +757,9 @@ input:focus-visible, textarea:focus-visible{
     .ab-pfo-banner-name{
         font-size: 54px;
     }
+    .ab-pfo-banner-welcometxt{
+        font-size: 54px;
+    }
     .ab-pfo-banner-description{
         font-size: 24px;
     }
@@ -743,7 +781,7 @@ input:focus-visible, textarea:focus-visible{
         padding: 40px 0 70px 0;
     }
     .ab-pfo-prof-jrny-head p, .ab-pfo-projects p{
-        font-size: 36px;
+        font-size: 28px;
     }
     .ab-pfo-prof-jrny-content p{
         font-size: 26px;
@@ -768,6 +806,9 @@ input:focus-visible, textarea:focus-visible{
         max-width: 24rem;
     }
     .ab-pfo-banner-name {
+        font-size: 47px;
+    }
+    .ab-pfo-banner-welcometxt{
         font-size: 47px;
     }
     .ab-pfo-banner-description {
@@ -820,6 +861,9 @@ input:focus-visible, textarea:focus-visible{
         max-width: 13rem !important;
     }
     .ab-pfo-banner-name {
+        font-size: 36px;
+    }
+    .ab-pfo-banner-welcometxt{
         font-size: 36px;
     }
     .ab-pfo-banner-description {
@@ -884,6 +928,9 @@ input:focus-visible, textarea:focus-visible{
         width: 38px;
     }
     .ab-pfo-banner-name {
+        font-size: 33px;
+    }
+    .ab-pfo-banner-welcometxt{
         font-size: 33px;
     }
     .ab-pfo-banner-image img {
@@ -963,6 +1010,9 @@ input:focus-visible, textarea:focus-visible{
     .ab-pfo-banner-name {
         font-size: 26px;
     }
+    .ab-pfo-banner-welcometxt{
+        font-size: 26px;
+    }
     .ab-pfo-banner-description {
         font-size: 11px;
     }
@@ -992,7 +1042,7 @@ input:focus-visible, textarea:focus-visible{
         bottom: -47%;
     }
     .ab-pfo-prof-jrny-head p, .ab-pfo-projects p {
-        font-size: 20px;
+        font-size: 16px;
     }
     .ab-pfo-prof-jrny-content p {
         font-size: 13px;
@@ -1054,6 +1104,9 @@ input:focus-visible, textarea:focus-visible{
     .ab-pfo-banner-name {
         font-size: 22px;
     }
+    .ab-pfo-banner-welcometxt{
+        font-size: 22px;
+    }
     .ab-pfo-banner-description {
         font-size: 10px;
     }
@@ -1073,9 +1126,9 @@ input:focus-visible, textarea:focus-visible{
     .slick-arrow svg {
         width: 31px;
     }
-    .ab-pfo-prof-jrny-head p, .ab-pfo-projects p {
+    /* .ab-pfo-prof-jrny-head p, .ab-pfo-projects p {
         font-size: 18px;
-    }
+    } */
     .ab-pfo-prof-jrny-content p {
         font-size: 11px;
     }
