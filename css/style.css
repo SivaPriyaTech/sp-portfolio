@@ -193,7 +193,7 @@ body {
 
 /* Technical Section */
 .ab-pfo-tech-section{
-    padding: 40px 0;
+    padding: 70px 0;
     /* background: url(../images/yellowbg.png) */
     background: #A6D388;
 }
@@ -208,6 +208,16 @@ body {
     height: 62px;
     margin:0 auto;
     animation: title-animation 2s infinite;
+}
+
+.design-element{
+    position: absolute;
+    top: -18px;
+    width: 138px;
+    height: 68px;
+    background-color: #a6d388;
+    transform: rotate(45deg);
+    right: -40px;
 }
 
 @keyframes title-animation{
@@ -228,10 +238,11 @@ body {
 } */
 
 .ab-pfo-sec-head{
+    position: relative;
     background-color: #fff;
     width: fit-content;
     /* margin: 0 auto; */
-    padding: 14px 20px;
+    padding: 14px 100px;
     /* border: 1px solid #000000; */
     /* position: absolute;
     top: 0px;
@@ -302,14 +313,15 @@ body {
 /* My Professional Journey */
 
 .ab-pfo-prof-jrny-section{
-    padding: 80px;
+    padding: 80px 0;
 }
 
 .ab-pfo-prof-jrny-head{
+    position: relative;
     background-color: #fff;
     width: fit-content;
     margin: 0 auto;
-    padding: 14px 20px;
+    padding: 14px 100px;
     margin-right: 0;
 }
 
@@ -321,6 +333,12 @@ body {
     text-align: center;
     color: #000000;
     margin-bottom:0;
+}
+
+.ab-pfo-prof-jrny-head .design-element{
+    top: -9px;
+    transform: rotate(-45deg);
+    left: -50px;
 }
 
 .ab-pfo-prof-jrny-content p{
@@ -511,10 +529,10 @@ body {
     padding: 10px 10px;
     color: white;
     transition: 0.2s ease-in;
-    border: 1px solid #2B2B2B;
+    border: 1px solid #a6d388;
 }
 .ab-pfo-contact-submit-btn:hover{
-    background-color: #F3E04F;
+    background-color: #a6d388;
     color: #2B2B2B;
     transition: 0.2s ease-in;
 }
@@ -732,7 +750,7 @@ input:focus-visible, textarea:focus-visible{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #f5df39;
+    background-color: #ffffff;
     border: 1px solid #2B2B2B;
     border-radius: 50%;
     width: 50px;
@@ -743,7 +761,7 @@ input:focus-visible, textarea:focus-visible{
     cursor: pointer;
 }
 .go-top:hover{
-    background-color: white;
+    background-color: #a6d388;
 }
 .go-top img{
     max-width: 1rem;
@@ -778,7 +796,10 @@ input:focus-visible, textarea:focus-visible{
         padding: 60px 0;
     }
     .ab-pfo-tech-section{
-        padding: 40px 0 70px 0;
+        padding: 50px 0 70px 0;
+    }
+    .ab-pfo-sec-head .design-element{
+        width: 111px;
     }
     .ab-pfo-prof-jrny-head p, .ab-pfo-projects p{
         font-size: 28px;
