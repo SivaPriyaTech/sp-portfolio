@@ -273,6 +273,21 @@ body {
     position: relative;
 }
 
+.ab-skill-holder-main-div{
+    display: flex !important;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.ab-skill-img-holder img{
+    max-width: 5rem;
+}
+
+.ab-skill-img-holder{
+    background-color: white;
+    padding: 20px;
+}
+
 .ab-pfo-tech-skill-holder{
     display: flex !important;
     background: white;
