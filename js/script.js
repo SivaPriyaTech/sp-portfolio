@@ -191,3 +191,7 @@ function sendMail() {
 
 }
 
+
+// Remove the text from the slick button 
+$(".slick-dots button").text("");
+
