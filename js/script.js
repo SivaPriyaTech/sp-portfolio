@@ -53,7 +53,7 @@ $(".mob.ab-pfo-nav-list-container .ab-pfo-nav-list-item").click(() => {
 // Skills Slider
 $(".ab-pfo-tech-skills-slick-slider").slick({
   vertical:true,
-  slidesToShow: 1,
+  slidesToShow: 2,
   infinite: false,
   slidesToScroll: 1,
   autoplay: false,
