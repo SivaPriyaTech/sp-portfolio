@@ -147,12 +147,17 @@ body {
 }
 
 .ab-pfo-banner-welcometxt{
-    font-family: Borel;
+    /* font-family: Borel;
     font-weight: 400;
     font-size: 64px;
     line-height: 50px;
     letter-spacing: 0%;
-    color:#000000 #000000;
+    color:#000000 #000000; */
+    font-family: Bree Serif;
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 600;
+    color:#000000;
 }
 
 .ab-pfo-banner-image{
@@ -172,29 +177,68 @@ body {
 }
 
 .ab-pfo-banner-name{
-    font-family: Borel;
+    /* font-family: Borel;
     font-weight: 400;
     font-style: normal; 
     color: #000000;
     font-size: 64px; 
-    line-height: 50px;
+    line-height: 50px; */
+    font-family: Bree Serif;
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 600;
+    color:#000000;
 }
-.ab-pfo-banner-name span{
+/* .ab-pfo-banner-name span{
     font-family: Boogaloo;
-}
+} */
 
 .ab-pfo-banner-description{
     font-family: Alata;
     font-weight: 400;
     font-style: normal;
     color: #000000;
-    font-size: 28px; 
+    font-size: 18px; 
+    margin-top: 20px;
+}
+
+/* .download{
+    background-color: #425b31;
+    padding: 10px 10px;
+    color: white;
+    transition: 0.2s ease-in;
+    border: 1px solid #a6d388;
+    margin-top: 20px;
+}
+
+.download :hover{
+    background-color: #a6d388;
+    color: #2B2B2B;
+    transition: 0.2s ease-in;
+} */
+
+.download {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #425b31;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+    margin-top: 20px;
+}
+
+.download:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Technical Section */
 .ab-pfo-tech-section{
     padding: 70px 0;
-    /* background: url(../images/yellowbg.png) */
     background: #A6D388;
 }
 
@@ -460,7 +504,6 @@ body {
     min-width: 100%;
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-between; */
   }
   
   .ab-pfo-child {
@@ -512,7 +555,6 @@ body {
 
 .ab-pfo-awards-section{
     margin: 60px 0 0 0;
-    /* background: url(../images/yellowbg.png); */
     background: #2B2B2B;
     padding: 40px 0;
 }
@@ -832,15 +874,6 @@ input:focus-visible, textarea:focus-visible{
     .ab-pfo-nav-list .ab-pfo-nav-list-item .ab-pfo-nav-item{
         font-size: 20px;
     }
-    .ab-pfo-banner-name{
-        font-size: 54px;
-    }
-    .ab-pfo-banner-welcometxt{
-        font-size: 54px;
-    }
-    .ab-pfo-banner-description{
-        font-size: 24px;
-    }
     .ab-pfo-sec-head p{
         font-size: 28px;
     }
@@ -886,15 +919,8 @@ input:focus-visible, textarea:focus-visible{
     .ab-pfo-banner-image image{
         max-width: 24rem;
     }
-    .ab-pfo-banner-name {
-        font-size: 47px;
-    }
-    .ab-pfo-banner-welcometxt{
-        font-size: 47px;
-    }
-    .ab-pfo-banner-description {
-        font-size: 21px;
-    }
+    
+
     .ab-pfo-prof-jrny-content p {
         font-size: 23px;
     }
