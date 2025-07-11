@@ -330,11 +330,20 @@ body {
 }
 
 .ab-skill-img-holder{
-    background-color: white;
+    /* background-color: white; */
     padding: 20px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg, #a6d388 0%, #c6e8a1 100%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.ab-skill-img-holder:hover{
+    transform: scale(1.05);
 }
 
 .slick-dots{
@@ -415,7 +424,7 @@ body {
 /* My Professional Journey */
 
 .ab-pfo-prof-jrny-section{
-    padding: 80px 0;
+    padding-bottom: 40px;
 }
 
 .ab-pfo-prof-jrny-head{
@@ -445,7 +454,7 @@ body {
 
 .ab-pfo-prof-jrny-content p{
     font-family: Alata;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 150%;
     text-align: justify;
